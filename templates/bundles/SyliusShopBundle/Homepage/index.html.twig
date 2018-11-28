@@ -1,0 +1,17 @@
+{% extends '@SyliusShop/layout.html.twig' %}
+
+{% block content %}
+
+<div class="homepage-slider_slide_text" style="position: absolute;">
+    <h1>Need fine wine inspiration</h1>
+    <h2>View our extensive range of</h2>
+    <h2>red wine, white wine,</h2>
+    <h2>champagne &amp; prosecco</h2>
+</div>
+
+
+<h2 class="ui horizontal section divider header">
+    {{ 'sylius.ui.latest_products'|trans }}
+</h2>
+{{ render(url('sylius_shop_partial_product_index_latest', {'count': 4, 'template': '@SyliusShop/Product/_horizontalList.html.twig'})) }}
+{% endblock %}
