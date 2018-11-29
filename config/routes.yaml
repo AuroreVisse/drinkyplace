@@ -1,0 +1,4 @@
+app_supplier:
+    resource: |
+        alias: app.supplier
+    type: sylius.resource
